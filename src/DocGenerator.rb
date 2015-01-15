@@ -58,9 +58,9 @@ module DocGenerator
     #--------------------------------------------------------------------------
     # * Data Navigation
     #--------------------------------------------------------------------------
-    def index; "Home"; end
-    def cmdindex; "Liste descommandes"; end
-    def clindex; "Classes et modules"; end
+    def index; "Home.md"; end
+    def cmdindex; "Liste descommandes.md"; end
+    def clindex; "Classes et modules.md"; end
     def extension; "md"; end
   end
 
@@ -129,21 +129,21 @@ module DocGenerator
     # * Index
     #--------------------------------------------------------------------------
     def index(mdl) 
-      mdl.index + "." + mdl.extension
+      mdl.index #+ "." + mdl.extension
     end
 
     #--------------------------------------------------------------------------
     # * Command Index
     #--------------------------------------------------------------------------
     def cmdindex(mdl) 
-      mdl.cmdindex + "." + mdl.extension
+      mdl.cmdindex #+ "." + mdl.extension
     end
 
     #--------------------------------------------------------------------------
     # * Class Index
     #--------------------------------------------------------------------------
     def clindex(mdl) 
-      mdl.clindex + "." + mdl.extension
+      mdl.clindex #+ "." + mdl.extension
     end
 
     #--------------------------------------------------------------------------
@@ -152,7 +152,9 @@ module DocGenerator
     def filename(mdl, classname)
       classname.to_s.gsub(":", "_").gsub(".", "_") + "." + mdl.extension
     end
-
+    def filename2(mdl, classname)
+      classname.to_s.gsub(":", "_").gsub(".", "_")
+    end
     #--------------------------------------------------------------------------
     # * Create Front page (header)
     #--------------------------------------------------------------------------
@@ -269,7 +271,8 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_class_page(mdl, klass, index, output)
       name = filename(mdl, klass)
-      index += mdl.li(mdl.link(klass, name))
+      name2 = filename2(mdl, klass)
+      index += mdl.li(mdl.link(klass, name2))
       page = make_class_header(mdl, klass)
       page += make_class_attributes(mdl, klass)
       page += make_class_methods(mdl, RME::Doc.schema[klass][:methods])
