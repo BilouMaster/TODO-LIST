@@ -306,7 +306,7 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_command_index_page(mdl, output)
       h = make_header(mdl)
-      a = mdl.link(RME::Doc.vocab[:index], index(mdl))
+      a = mdl.link(RME::Doc.vocab[:index], "Liste des commandes")
       a = a + " > " + mdl.strong(RME::Doc.vocab[:cmd_title])
       l = mdl.ul
       Hash[RME::Doc.commands.sort].each do |c, command|
@@ -323,7 +323,7 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_class_index_page(mdl, output)
       h = make_header(mdl)
-      a = mdl.link(RME::Doc.vocab[:index], index(mdl))
+      a = mdl.link(RME::Doc.vocab[:index], "Classes et modules")
       a = a + " > " + mdl.strong(RME::Doc.vocab[:cl_title])
       l = mdl.ul
       Hash[RME::Doc.schema.sort].each do |klass, i|
