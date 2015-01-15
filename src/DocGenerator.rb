@@ -59,7 +59,7 @@ module DocGenerator
     # * Data Navigation
     #--------------------------------------------------------------------------
     def index; "Home.md"; end
-    def cmdindex; "Liste descommandes.md"; end
+    def cmdindex; "Liste des commandes.md"; end
     def clindex; "Classes et modules.md"; end
     def extension; "md"; end
   end
@@ -289,7 +289,8 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_command_page(mdl, c, command, index, output)
       fname = filename(mdl, "command_#{c}")
-      index += mdl.li(mdl.link(command[:name], fname))
+      fname2 = filename2(mdl, "command_#{c}")
+      index += mdl.li(mdl.link(command[:name], fname2))
       page = make_cmd_header(mdl, c)
       page += make_cmd_methods(mdl, RME::Doc.commands[c][:commands])
       page += mdl.footer
