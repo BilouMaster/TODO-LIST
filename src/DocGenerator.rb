@@ -170,7 +170,7 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_class_header(mdl, classname)
       h = make_header(mdl)
-      a = mdl.link(RME::Doc.vocab[:index], RME::Doc.vocab[:index])
+      a = mdl.link(RME::Doc.vocab[:index], "Home")
       a = a + " > " + mdl.link(RME::Doc.vocab[:cl_title], RME::Doc.vocab[:cl_title])
       a = a + " > " + mdl.strong(classname)
       t = mdl.title(1, classname)
@@ -183,7 +183,7 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_cmd_header(mdl, classname)
       h = make_header(mdl)
-      a = mdl.link(RME::Doc.vocab[:index], RME::Doc.vocab[:index])
+      a = mdl.link(RME::Doc.vocab[:index], "Home")
       a = a + " > " + mdl.link(RME::Doc.vocab[:cmd_title], RME::Doc.vocab[:cmd_title])
       a = a + " > " + mdl.strong(RME::Doc.commands[classname][:name])
       t = mdl.title(1, RME::Doc.commands[classname][:name])
@@ -306,7 +306,7 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_command_index_page(mdl, output)
       h = make_header(mdl)
-      a = mdl.link(RME::Doc.vocab[:index], RME::Doc.vocab[:index])
+      a = mdl.link(RME::Doc.vocab[:index], "Home")
       a = a + " > " + mdl.strong(RME::Doc.vocab[:cmd_title])
       l = mdl.ul
       Hash[RME::Doc.commands.sort].each do |c, command|
@@ -323,7 +323,7 @@ module DocGenerator
     #--------------------------------------------------------------------------
     def make_class_index_page(mdl, output)
       h = make_header(mdl)
-      a = mdl.link(RME::Doc.vocab[:index], RME::Doc.vocab[:index])
+      a = mdl.link(RME::Doc.vocab[:index], "Home")
       a = a + " > " + mdl.strong(RME::Doc.vocab[:cl_title])
       l = mdl.ul
       Hash[RME::Doc.schema.sort].each do |klass, i|
