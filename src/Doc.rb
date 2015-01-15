@@ -29,7 +29,7 @@ module Doc
     :m_desc    => "Description des méthodes",
     :m_list    => "Liste des méthodes",
     #commands
-    :cmd_title => "Index des commandes",
+    :cmd_title => "Liste des commandes",
     :cmd_desc  => "Description des commandes",
     :cmd_list  => "Liste des commandes",
     #labels
