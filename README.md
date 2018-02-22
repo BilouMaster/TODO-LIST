@@ -1,9 +1,4 @@
-# WikiTest
-
-
-
-
-
+# Jauke's TODO-LIST for RMEx
 
 ### scripts-externalizer
 
@@ -20,15 +15,16 @@
 
 - [ ] add parameter: COMPILE_FROM = "Scripts"
 
-### ups-viewer
+### [NEW] ups-viewer
 
-- [ ] shows updates per second (and explain differences between UPS and FPS)
+- [ ] code **ups-viewer** new script from orms' FPS_VIEWER
 
-### gex: graphics-extender
+### [NEW] gex: graphics-extender
 
-- [ ] put PIXELATE_SCREEN from orms, camera/screen commands and Incubator (Resolution.change) from RME together
-- [ ] try... ...things...
-- [ ] extend ups-viewer
+- [ ] code **gex** new script from:
+      - the orms' PIXELATE_SCREEN
+      - the RME's camera/screen commands && Resolution.change
+- [ ] extend **ups-viewer** (add FPS with frame skipping to UPS)
 
 ### orms
 
