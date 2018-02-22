@@ -22,8 +22,10 @@
 ### [NEW] gex: graphics-extender
 
 - [ ] code **gex** new script from:
-      - the orms' PIXELATE_SCREEN
-      - the RME's camera/screen commands && Resolution.change
+
+  - the orms' PIXELATE_SCREEN
+  - the RME's camera/screen commands && Resolution.change
+      
 - [ ] extend **ups-viewer** (add FPS with frame skipping to UPS)
 
 ### orms
