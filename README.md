@@ -5,6 +5,7 @@
 - [ ] add parameter: EXTERNALIZE = "Materials"
 - [ ] add parameter: EXTERNALIZE_TO = "Scripts"
 - [ ] read Scripts.rvdata2 paths in Game.ini
+- [ ] read its own =begin...=end to add scripts-loader
 
 ### scripts-loader
 
