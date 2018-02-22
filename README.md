@@ -4,6 +4,7 @@
 
 - [ ] add parameter: EXTERNALIZE = "Materials"
 - [ ] add parameter: EXTERNALIZE_TO = "Scripts"
+- [ ] read Scripts.rvdata2 paths in Game.ini
 
 ### scripts-loader
 
@@ -14,6 +15,7 @@
 ### scripts-compiler
 
 - [ ] add parameter: COMPILE_FROM = "Scripts"
+- [ ] read Scripts.rvdata2 paths in Game.ini
 
 ### [NEW] ups-viewer
 
