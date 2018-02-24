@@ -33,8 +33,8 @@
 
 ### orms
 
-- [ ] **Remove** `PIXELATE_SCREEN` and recommand gex + ups-viewer
-- [ ] **Throw** a message like "this command no longer exists
+- [ ] **Remove** `PIXELATE_SCREEN` and recommand gex + ups-viewer #Throw a message like "this command no longer exists
+- [ ] **Fix** name input
 - [ ] **Add** methods to set a `start_transition` and a `end_transition` in events for teleports and... reproduce all RM(2)K3 start/end transitions? :D
 - [ ] **Change** `STOP_CURSOR_BLINKING` to fancy new `OLD_RM_CURSOR_BLINKING` (use a new system picture to make oldschool blink like RM2k(3) (graphical switch blinking))
 - [ ] **Add** the feature `ICONS_FOR_ALL_TEXTS` to use `\I[id]` code like in dialogues, but for everything (name/description of objects, skills, etc) like RM2K(3) did with glyphs
@@ -42,8 +42,7 @@
 
 ### RME
 
-- [ ] **Remove** camera/screen commands, Incubator (Resolution.change) and "unsafe?"
-- [ ] **Throw** a message like "this command no longer exists in RME, use gex... etc." when the methods are still used
+- [ ] **Remove** camera/screen commands, Incubator (Resolution.change) and "unsafe?" #Throw a message like "this command no longer exists in RME, use gex... etc." when the methods are still used
 - [ ] **Remove** unsafe?
 - [ ] **Code** release-builder
 - [ ] **Give** example of new organization:
