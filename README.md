@@ -2,47 +2,51 @@
 
 ### scripts-externalizer
 
-- [ ] add parameter: EXTERNALIZE = "Materials"
-- [ ] add parameter: EXTERNALIZE_TO = "Scripts"
-- [ ] read Scripts.rvdata2 paths in Game.ini
-- [ ] read its own =begin...=end to add scripts-loader
+- [ ] **Add** parameter: `EXTERNALIZE = "Materials"`
+- [ ] **Add** parameter: `EXTERNALIZE_TO = "Scripts"`
+- [ ] **Read** Scripts.rvdata2 paths in Game.ini
+- [ ] **Read** its own =begin...=end to add scripts-loader
 
 ### scripts-loader
 
-- [ ] try new load method
-- [ ] absolute/relative path recognition
-- [ ] add parameter: LOAD_FROM = "Scripts" (String || Array)
+- [ ] **Try** new load method
+- [ ] **Add** absolute/relative path recognition
+- [ ] **Add** parameter: `LOAD_FROM = "Scripts" (String || Array)`
 
 ### scripts-compiler
 
-- [ ] add parameter: COMPILE_FROM = "Scripts"
-- [ ] read Scripts.rvdata2 paths in Game.ini
+- [ ] **Add** parameter: `COMPILE_FROM = "Scripts"`
+- [ ] **Read** Scripts.rvdata2 paths in Game.ini
 
 ### [NEW] ups-viewer
 
-- [ ] code **ups-viewer** new script from orms' FPS_VIEWER
+- [ ] **Code** ups-viewer new script from orms' FPS_VIEWER
 
 ### [NEW] gex: graphics-extender
 
-- [ ] code **gex** new script from:
+- [ ] **Code** gex new script from:
 
   - the orms' PIXELATE_SCREEN
   - the RME's camera/screen commands && Resolution.change
       
-- [ ] extend **ups-viewer** (add FPS with frame skipping to UPS)
+- [ ] **Extend** ups-viewer (add FPS with frame skipping to UPS)
 
 ### orms
 
-- [ ] remove PIXELATE_SCREEN and recommand gex + ups-viewer
-- [ ] throw a message like "this command no longer exists
+- [ ] **Remove** `PIXELATE_SCREEN` and recommand gex + ups-viewer
+- [ ] **Throw** a message like "this command no longer exists
+- [ ] **Add** methods to set a `start_transition` and a `end_transition` in events for teleports and... reproduce all RM(2)K3 start/end transitions? :D
+- [ ] **Change** `STOP_CURSOR_BLINKING` to fancy new `OLD_RM_CURSOR_BLINKING` (use a new system picture to make oldschool blink like RM2k(3) (graphical switch blinking))
+- [ ] **Add** the feature `ICONS_FOR_ALL_TEXTS` to use `\I[id]` code like in dialogues, but for everything (name/description of objects, skills, etc) like RM2K(3) did with glyphs
+- [ ] **Add** the feature `NO_MAP_SHADOWS` to deactivate the VXA shadow display in maps ingame.
 
 ### RME
 
-- [ ] remove camera/screen commands, Incubator (Resolution.change) and "unsafe?"
-- [ ] throw a message like "this command no longer exists in RME, use gex... etc." when the methods are still used
-- [ ] remove unsafe?
-- [ ] release-builder
-- [ ] give example of new organization:
+- [ ] **Remove** camera/screen commands, Incubator (Resolution.change) and "unsafe?"
+- [ ] **Throw** a message like "this command no longer exists in RME, use gex... etc." when the methods are still used
+- [ ] **Remove** unsafe?
+- [ ] **Code** release-builder
+- [ ] **Give** example of new organization:
 ```
 - dev/
     - src/
@@ -71,3 +75,6 @@
 ~ CHANGELOG.md (translated in english)
 ~ README.rb (translated in english + enhancement)
 ```
+
+### orms-converter
+- [ ] **Lawl**
