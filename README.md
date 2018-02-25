@@ -20,13 +20,25 @@
 
 ### orms
 
+- [x] **Verify/fix** compatibility between `PIXELATE_SCREEN` and some nervous scripts
+    - [x] RME (camera commands)
+    - [x] Luna Engine
+    - [ ] Theo's Sideview battle system
+    - [ ] MGC's mode 7
 - [x] **Fix** name input
-- [ ] **Add** methods to set a `start_transition` and a `end_transition` in events for teleports and... reproduce all RM(2)K3 start/end transitions? :D
-- [ ] **Change** `STOP_CURSOR_BLINKING` to fancy new `OLD_RM_CURSOR_BLINKING` (use a new system picture to make oldschool blink like RM2k(3) (graphical switch blinking))
-- [ ] **Add** the feature `ICONS_FOR_ALL_TEXTS` to use `\I[id]` code like in dialogues, but for everything (name/description of objects, skills, etc) like RM2K(3) did with glyphs
-- [ ] **Add** the feature `NO_MAP_SHADOWS` to deactivate the VXA shadow display in maps ingame.
-- [ ] **Change** characters direction in save/load menus
-- [ ] **Save** current feature status in save files
+- [ ] **Fix** current feature status not saved in save files yet
+- [ ] **Fix** characters direction in save/load menus (when `OLD_CHARSET_DIRECTION` is used)
+- [ ] **Add** `ICONS_FOR_ALL_TEXTS` feature to use `\I[id]` code like in dialogues, but for everything (name/description of objects, skills, etc) like RM2K(3) did with glyphs
+- [ ] **Add** the feature `NO_MAP_SHADOWS` in `DESTROY_NEW_RM_FEATURES` to deactivate the VXA shadow display in maps ingame
+- [ ] **Implement** `BITMAP_FONT_FEATURE_OPTIONS`:
+    - [ ] `BITMAP_FONTS = [args_1, args_2, args_3]` option with `args_X = [name, *char_width, *char_height, *color_set, *nb_color_max, *shadow]`
+    - [ ] `CURRENT_BMP_FONT = 0` (0 => first BMP\_FONT defined in `BITMAP_FONTS`) and `DEFAULT_COLOR_SET = "Font_color"`, replace `FONT_WIDTH`, `FONT_HEIGHT` and `SHADOW` by `DEFAULT_FONT_WIDTH`, `DEFAULT_FONT_HEIGHT` and `DEFAULT_SHADOW`
+    - [ ] `\F[id]` control character to change the BMP\_FONT in the middle of any text
+- [ ] **Implement** RM2k(3)-like **transitions** features and methods that reproduce and extend all transitions behaviours from RM2k(3)! :D
+- [ ] **Implement** a fancy new `OLD_RM_CURSOR_BLINKING` feature (use a new system picture to make oldschool blink like RM2k(3) (graphical switch blinking)) - Will replace the actual `STOP_CURSOR_BLINKING`
+- [ ] **Develop** [orms-converter](https://github.com/RMEx/orms-converter)
+- [ ] **Sleep**
+- [ ] **Any suggestion? ...Bug report?** Feel free to [create an issue](https://github.com/RMEx/orms-converter/issues) or [contact me on Discord!](https://discord.gg/yRUZcdQ)
 
 ### RME
 
