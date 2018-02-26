@@ -2,21 +2,20 @@
 
 ### scripts-externalizer
 
-- [ ] **Add** parameter: `EXTERNALIZE = "Materials"`
-- [ ] **Add** parameter: `EXTERNALIZE_TO = "Scripts"`
-- [ ] **Read** Scripts.rvdata2 paths in Game.ini
+- [x] **Add** parameter: `EXTRACT_TO = "Scripts"`
+- [x] **Read** Scripts.rvdata2 paths in Game.ini
 - [ ] **Read** its own =begin...=end to add scripts-loader
 
 ### scripts-loader
 
+- [x] **Add** parameter: `LOAD_FROM = "Scripts"`
 - [ ] **Add** absolute/relative path recognition
-- [ ] **Add** parameter: `LOAD_FROM = "Scripts"`
 
 ### scripts-compiler
 
-- [ ] **Add** parameter: `COMPILE_FROM = "Scripts"`
+- [x] **Add** parameter: `COMPILE_FROM = "Scripts"`
+- [x] **Read** Scripts.rvdata2 paths in Game.ini
 - [ ] **Add** absolute/relative path recognition
-- [ ] **Read** Scripts.rvdata2 paths in Game.ini
 
 ### orms
 
@@ -45,8 +44,8 @@
 
 ### RME
 
-- [ ] **Code** release-builder
-- [ ] **Give** example of new organization:
+- [x] **Code** release-builder
+- [x] **Give** example of new organization:
 ```
 - dev/
     - src/
